@@ -1,4 +1,4 @@
-# UKAR
+# UKAR - Uncertainty-aware knowledge acquisition 
 
 **Problem.** A local model often invents a count, date, rate, or measurement that was never in the chat. Some setups then send the whole question to another model, so you never see which fact was missing.
 

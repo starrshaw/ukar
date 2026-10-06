@@ -4,9 +4,11 @@
 
 
 
-**Problem.** A local model often invents a count, date, rate, or measurement that was never in the chat. Some setups then send the whole question to another model, so you never see which fact was missing.
+**Problem.**
+A local model often invents a count, date, rate, or measurement that was never in the chat. Some setups then send the whole question to another model, so you never see which fact was missing.
 
-**Solution.** UKAR uses the llama.cpp or Ollama model already running on your computer. That model names only the missing facts. UKAR fills the ones you supplied, or the ones in a local table you added. The same model writes the answer. If a fact is still missing, you get the question instead of a made-up number.
+**Solution.**
+UKAR uses the llama.cpp or Ollama model already running on your computer. That model names only the missing facts. UKAR fills the ones you supplied, or the ones in a local table you added. The same model writes the answer. If a fact is still missing, you get the question instead of a made-up number.
 
 It does not load a model of its own, browse the web, or call another computer. A question the model already knows is answered by that same model. "Already trusted" in a trace means the model claimed the fact. It does not mean a table checked it.
 

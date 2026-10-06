@@ -4,7 +4,7 @@
 
 
 ***
-**Problem.**  A local model often invents a count, date, rate, or measurement that was never in the chat. Some setups then send the whole question to another model, so you never see which fact was missing.
+**Problem.**  A Small local AI model often invents a count, date, rate, or measurement that was never in the chat. Some setups then send the whole question to another model, so you never see which fact was missing.
 
 **Solution.**  UKAR uses the llama.cpp or Ollama model already running on your computer. That model names only the missing facts. UKAR fills the ones you supplied, or the ones in a local table you added. The same model writes the answer. If a fact is still missing, you get the question instead of a made-up number.
 

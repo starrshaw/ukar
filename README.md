@@ -15,36 +15,49 @@ It does not load a model of its own, browse the web, or call another computer. A
 The local model makes the "can answer now" call as its gap report. UKAR then fills facts. A partial fill still asks you. The package ships with the facts you pass in. A local table is used only after you add one.
 
 ```text
-Question
-   |
-   v
-Local model
-   |
-   +--> Can answer now?
-   |          |
-   |          +--> Yes --> Same model writes the answer
-   |
-   +--> No
-           |
-           v
-      Missing facts
-           |
-           v
-          UKAR
-           |
-           +--> Facts you passed in
-           +--> Local tables you added
-           |
-           v
-   Every required fact filled?
-           |
-      +----+----+
-      |         |
-     No        Yes
-      |         |
-      v         v
-  Ask user   Same model
-             writes the answer
+┌──────────┐
+│ Question │
+└────┬─────┘
+     │
+     ▼
+┌──────────────┐
+│ Local model  │
+└──────┬───────┘
+       │
+       ▼
+┌─────────────────┐
+│ Can answer now? │
+└───┬─────────┬───┘
+    │ Yes     │ No
+    ▼         ▼
+┌──────────┐  ┌───────────────┐
+│ Same     │  │ Missing facts │
+│ model    │  └───────┬───────┘
+│ answers  │          │
+└──────────┘          ▼
+                 ┌─────────┐
+                 │  UKAR   │
+                 └────┬────┘
+                      │
+          ┌───────────┴───────────┐
+          ▼                       ▼
+   ┌─────────────┐         ┌──────────────┐
+   │ Facts you   │         │ Local tables │
+   │ passed in   │         │ you added    │
+   └──────┬──────┘         └──────┬───────┘
+          └───────────┬───────────┘
+                      ▼
+            ┌───────────────────┐
+            │ Every required    │
+            │ fact filled?      │
+            └───┬───────────┬───┘
+                │ No        │ Yes
+                ▼           ▼
+           ┌─────────┐ ┌──────────┐
+           │ Ask you │ │ Same     │
+           └─────────┘ │ model    │
+                       │ answers  │
+                       └──────────┘
 ```
 
 ## What you can do with it

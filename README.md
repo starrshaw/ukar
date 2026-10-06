@@ -292,7 +292,7 @@ print(trace.answer)
 
 ## License and your own risk
 
-This project is MIT. Copyright (c) 2026 starrshaw. See `LICENSE`.
+This project is MIT. Copyright (c) 2026 Starr Shaw See `LICENSE`.
 
 The license says the software is provided **as is**, with no warranty of any kind. The author and copyright holder are not liable for any claim, damages, or other liability from using it. You use UKAR at your own risk.
 

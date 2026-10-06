@@ -6,7 +6,7 @@
 ***
 **Problem.**  A Small local AI model often invents a count, date, rate, or measurement that was never in the chat. Some setups then send the whole question to another model, so you never see which fact was missing.
 
-**Solution.**  UKAR uses the llama.cpp or Ollama model already running on your computer. That model names only the missing facts. UKAR fills the ones you supplied, or the ones in a local table you added. The same model writes the answer. If a fact is still missing, you get the question instead of a made-up number.
+**Solution.**  UKAR uses the local model already running on your computer. The model identifies only the facts it is missing. UKAR fills those facts from values you supplied or from local tables and sources you control. The same model then writes the answer. If a fact is still missing, you get the question instead of a made-up number. UKAR ships with integrations for llama.cpp and Ollama and can be adapted to other local AI stacks.
 
 It does not load a model of its own, browse the web, or call another computer. A question the model already knows is answered by that same model. "Already trusted" in a trace means the model claimed the fact. It does not mean a table checked it.
 

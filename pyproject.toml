@@ -6,7 +6,7 @@ readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
 requires-python = ">=3.11"
-authors = [{ name = "starrshaw" }]
+authors = [{ name = "Starr Shaw" }]
 keywords = ["llama.cpp", "ollama", "local-llm", "tools"]
 classifiers = [
   "License :: OSI Approved :: MIT License",

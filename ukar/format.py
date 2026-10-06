@@ -53,8 +53,7 @@ def format_trace(trace: Trace) -> str:
         lines.append("Acquired")
         for fact in trace.facts:
             lines.append(
-                f"  {fact.key:<22} {fact.value:<8} {fact.source_id:<16} "
-                f"{fact.cents:g}¢  {fact.privacy}"
+                f"  {fact.key:<22} {fact.value:<8} {fact.source_id:<16} {fact.privacy}"
             )
             lines.append(f"    {fact.text}")
     if trace.considerations:
@@ -63,7 +62,7 @@ def format_trace(trace: Trace) -> str:
         for item in trace.considerations:
             needs = ", ".join(item.need_ids)
             lines.append(
-                f"  {item.decision:<10} {item.source_id:<16} {item.cents:g}¢  "
+                f"  {item.decision:<10} {item.source_id:<16} "
                 f"{item.privacy:<14} {needs}"
             )
             lines.append(f"    {item.reason}")

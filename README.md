@@ -290,26 +290,30 @@ print(trace.answer)
 
 `ScriptedCompleter` is the stand-in behind `python -m ukar demo`. Use it to check your tables without starting a model server.
 
-## License and your own risk
-
-This project is MIT. Copyright (c) 2026 Starr Shaw See `LICENSE`.
-
-The license says the software is provided **as is**, with no warranty of any kind. The author and copyright holder are not liable for any claim, damages, or other liability from using it. You use UKAR at your own risk.
-
-An answer is not professional advice. You are responsible for the facts you put in and for what you do with the answer.
-
-The code in this repository is written for this project and is MIT. It has no runtime dependencies. It does not copy in llama.cpp, Ollama, or another license. Those programs stay where you installed them. llama.cpp and Ollama are MIT projects of their own. You need Python to run this package. Python itself is under the PSF License, which is not MIT, and it is not included here.
-
-## Important
-
-**UKAR is a software tool that reduces guessed facts. It is not a guarantee that an answer is correct, and it is not professional advice.**
-
-**An answer may still be wrong if:**
-
-- **a supplied fact is wrong,**
-- **a local table contains incorrect information,**
-- **a model incorrectly claims it already knows a fact,**
-- **a model reasons incorrectly from correct facts,**
-- **a needed fact is not identified.**
-
+## License and Your Own Risk
+ 
+This project is licensed under the MIT License.
+ 
+Copyright (c) 2026 Starr Shaw. See `LICENSE`.
+ 
+The license says the software is provided **"as is"**, without warranty of any kind. The author and copyright holder are not liable for any claim, damages, or other liability arising from the use of the software. You use UKAR at your own risk.
+ 
+An answer is not professional advice. You are responsible for the facts you provide and for any actions you take based on an answer.
+ 
+The code in this repository is written for this project and released under the MIT License. It has no runtime dependencies. It does not copy or include llama.cpp, Ollama, or software under another license. Those programs remain separate projects installed by the user. llama.cpp and Ollama are MIT-licensed projects of their own.
+ 
+Python is required to run this package. Python is distributed under the PSF License and is not included in this repository.
+ 
+### Important
+ 
+**UKAR is a software tool designed to reduce guessed facts. It does not guarantee that an answer is correct, and it is not professional advice.**
+ 
+An answer may still be wrong if:
+ 
+- a supplied fact is incorrect,
+- a local table contains incorrect information,
+- a model incorrectly claims it already knows a fact,
+- a model reasons incorrectly from correct facts,
+- a needed fact is not identified.
+ 
 **Always verify outputs before using them for legal, financial, medical, engineering, safety-critical, or regulatory decisions.**
